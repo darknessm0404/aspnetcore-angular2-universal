@@ -63,7 +63,7 @@ export class TransferHttp {
    */
   patch(url: string, body: any, options?: RequestOptionsArgs): Observable<any> {
     return this.getPostData(url, body, options, (url: string, options: RequestOptionsArgs) => {
-      return this.http.patch(url, body.options);
+      return this.http.patch(url, body, options);
     });
   }
   /**
